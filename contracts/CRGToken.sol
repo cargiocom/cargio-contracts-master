@@ -32,7 +32,7 @@ contract CRGToken is Context, IBEP20, Ownable {
     constructor() public {
         _name = "Cargio";
         _symbol = "CRG";
-        _decimals = 18;
+        _decimals = 8;
         burnRate = 0;
         daoRate = 0;
         daoAddress = address(0);
