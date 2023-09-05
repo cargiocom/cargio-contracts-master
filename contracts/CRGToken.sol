@@ -89,18 +89,6 @@ contract CRGToken is Context, IBEP20, Ownable {
         return true;
     }
 
-    /**
-     * @dev Atomically increases the allowance granted to `spender` by the caller.
-     *
-     * This is an alternative to {approve} that can be used as a mitigation for
-     * problems described in {BEP20-approve}.
-     *
-     * Emits an {Approval} event indicating the updated allowance.
-     *
-     * Requirements:
-     *
-     * - `spender` cannot be the zero address.
-     */
     function increaseAllowance(address spender, uint256 addedValue) public returns (bool) {
         _approve(_msgSender(), spender, _allowances[_msgSender()][spender].add(addedValue));
         return true;
