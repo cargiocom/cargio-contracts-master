@@ -42,16 +42,10 @@ contract CRGToken is Context, IBEP20, Ownable {
         emit Transfer(address(0), msg.sender, _totalSupply);
     }
 
-    /**
-     * @dev Returns the bep token owner.
-     */
     function getOwner() external view returns (address) {
         return owner();
     }
 
-    /**
-     * @dev Returns the token decimals.
-     */
     function decimals() external view returns (uint8) {
         return _decimals;
     }
