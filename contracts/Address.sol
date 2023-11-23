@@ -1,4 +1,4 @@
-pragma solidity ^0.5.5;4
+pragma solidity ^0.5.5;
 
 library Address {
     function isContract(address account) internal view returns (bool) {
