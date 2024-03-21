@@ -1,4 +1,4 @@
-const CargioExchangeTreasure = artifacts.require("./CargioExchangeTreasure.sol");
+1const CargioExchangeTreasure = artifacts.require("./CargioExchangeTreasure.sol");
 
 module.exports = async function (deployer, network, accounts) {
 };
